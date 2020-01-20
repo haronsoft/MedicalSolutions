@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AC2B3B"
+    android:id="@+id/main_rel"
+    tools:context="com.medianova.doctorfinder.Introduction">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip_txt"
+        android:id="@+id/btn_skip"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/img"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/sliderimg1"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/img"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:padding="5dp"
+            android:id="@+id/p1"
+            android:layout_marginEnd="3dp"
+            android:layout_height="20dp"
+            android:src="@drawable/pager1" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:padding="5dp"
+            android:id="@+id/p2"
+            android:layout_marginEnd="3dp"
+            android:layout_height="20dp"
+            android:src="@drawable/pager12" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:padding="5dp"
+            android:id="@+id/p3"
+            android:layout_height="20dp"
+            android:src="@drawable/pager12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/slidetitle1"
+            android:id="@+id/txt_tittle1"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_above="@+id/txt_tittle2"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:id="@+id/txt_tittle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
+            android:gravity="center"
+            android:text="@string/slidetitle2"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/txt_tittle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_continue"
+            android:fontFamily="@font/raleway"
+            android:gravity="center"
+            android:text="@string/slidetitle3"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:layout_marginBottom="35dp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/txt_continue"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/btn_continue"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/raleway"
+            android:textSize="18dp"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:background="@drawable/sliderbackground" />
+    </LinearLayout>
+
+
+</RelativeLayout>

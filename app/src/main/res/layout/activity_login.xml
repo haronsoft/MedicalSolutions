@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="SpUsage"
+    android:background="@mipmap/bg_login"
+    tools:context="com.medianova.doctorfinder.Login">
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/sign_with_fb"
+        android:paddingLeft="70dp"
+        android:maxLines="1"
+        android:text="@string/sign_in_with_facebook"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:paddingStart="70dp"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/or"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/facebook"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/or_btn"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/lltext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/or"
+        android:layout_marginBottom="10dp"
+        android:gravity="end"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:layout_marginEnd="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dont_have_account_txt"
+            android:maxLines="1"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/create"
+            android:layout_width="wrap_content"
+            android:maxLines="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="@string/create_new_one_txt"
+            android:textColor="#0089CF"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginStart="3dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/lltext"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/colorheader"
+        android:text="@string/sign_in_txt"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:id="@+id/mail"
+        android:layout_above="@+id/password"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/mail_id_btn"
+        android:hint="@string/username_txt"
+        android:paddingLeft="50dp"
+        android:paddingStart="50dp"
+        tools:ignore="RtlSymmetry" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:id="@+id/password"
+        android:layout_above="@+id/signin"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/password_btn"
+        android:inputType="textPassword"
+        android:hint="@string/password_txt"
+        android:paddingLeft="50dp"
+        android:paddingStart="50dp"
+        tools:ignore="RtlSymmetry" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login_txt"
+        android:textSize="25dp"
+        android:textColor="@color/colorheader"
+        android:layout_marginTop="30dp"
+         />
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+
+    <!-- Rating Bar  -->
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colordisable</item>
+        <item name="colorControlActivated">@color/coloractivated</item>
+    </style>
+    <style name="RatingBarYellow" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colordisable</item>
+        <item name="colorControlActivated">@color/coloractivatedyellow</item>
+    </style>
+
+    <style name="RatingBarForList" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/food_rating_bar_full</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">10dip</item>
+
+    </style>
+    <style name="RatingBarForReview" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/food_rating_bar_full</item>
+        <item name="android:minHeight">30dip</item>
+        <item name="android:maxHeight">30dip</item>
+
+    </style>
+
+    <style name="foodRatingShowreview" parent="@android:style/Widget.RatingBar">
+    <item name="android:progressDrawable">@drawable/food_rating_bar_show_review</item>
+    <item name="android:minHeight">50dp</item>
+    <item name="android:maxHeight">50dp</item>
+</style>
+    <style name="foodRatingShowreview1" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ic_star_black_24dp</item>
+    </style>
+
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/raleway</item>
+    </style>
+
+</resources>

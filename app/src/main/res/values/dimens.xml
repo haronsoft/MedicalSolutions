@@ -1,0 +1,7 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--<dimen name="griditemwidth">120dp</dimen>
+    <dimen name="griditemrow">123dp</dimen>-->
+    <dimen name="griditemwidth">120dp</dimen>
+    <dimen name="griditemrow">123dp</dimen>
+</resources>

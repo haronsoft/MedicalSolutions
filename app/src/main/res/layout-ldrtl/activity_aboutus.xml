@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/about_us_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.medianova.doctorfinder.Aboutus">
+    <RelativeLayout
+        android:id="@+id/rel_main"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorheader">
+        <TextView
+            android:id="@+id/txtheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:fontFamily="@font/raleway"
+            android:text="@string/about_us_txt"
+            android:textSize="25sp"
+            android:textColor="#FFF"
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_main">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card1"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:textSize="18dp"
+                        android:maxLines="1"
+                        android:id="@+id/h1"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/raleway"
+                        android:textColor="@android:color/black"
+                        android:text="@string/abtus_header"
+                        tools:ignore="SpUsage" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_below="@+id/h1"
+                        android:textSize="15dp"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/h2"
+                        android:fontFamily="@font/raleway"
+                        android:textColor="@android:color/black"
+                        android:text="@string/aboutparagraph1"
+                        tools:ignore="SpUsage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_below="@+id/h2"
+                        android:textSize="18dp"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/h3"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/raleway"
+                        android:textColor="@android:color/black"
+                        android:text="@string/version_txt"
+                        tools:ignore="SpUsage" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:id="@+id/txt_version"
+                        android:layout_below="@+id/h2"
+                        android:textSize="18dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/raleway"
+                        android:textColor="@android:color/black"
+                        android:text="@string/version_number"
+                        android:layout_toEndOf="@+id/h3"
+                        tools:ignore="SpUsage" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card2"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true"
+                android:layout_below="@+id/card1"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:textSize="18dp"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/h5"
+                        android:fontFamily="@font/raleway"
+                        android:textStyle="bold"
+                        android:textColor="#4381CC"
+                        android:text="@string/contact_us_txt"
+                        tools:ignore="SpUsage" />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/img_company"
+                        android:src="@drawable/company"
+                        android:layout_marginTop="5dp"
+                        android:padding="5dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:layout_below="@+id/h5"
+                        android:contentDescription="@string/todo" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/h5"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/name_company_txt"
+                        android:maxLines="1"
+                        android:id="@+id/txt_company_name"
+                        android:gravity="center_vertical"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/raleway"
+                        android:textColor="@android:color/black"
+                        tools:ignore="SpUsage"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/img_company" />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/img_email"
+                        android:src="@drawable/mail"
+                        android:layout_marginTop="5dp"
+                        android:padding="5dp"
+
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:layout_below="@+id/img_company"
+                        android:contentDescription="@string/todo" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/img_company"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/email_txt"
+                        android:maxLines="1"
+                        android:gravity="center_vertical"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:id="@+id/txt_email"
+                        android:fontFamily="@font/raleway"
+                        android:textColor="@android:color/black"
+                        android:layout_toEndOf="@+id/img_company"
+                        android:layout_marginStart="5dp"
+                        tools:ignore="SpUsage" />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/img_website"
+                        android:src="@drawable/web"
+                        android:layout_marginTop="5dp"
+                        android:padding="5dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:layout_below="@+id/img_email"
+                        android:contentDescription="@string/todo" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/img_email"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/website_text"
+                        android:maxLines="1"
+                        android:gravity="center_vertical"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:id="@+id/txt_website"
+                        android:fontFamily="@font/raleway"
+                        android:textColor="@android:color/black"
+                        android:layout_toEndOf="@+id/img_website"
+                        android:layout_marginStart="5dp"
+                        tools:ignore="SpUsage" />
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true"
+                android:layout_below="@+id/card2"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:textSize="18dp"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/txt_aboutus"
+                        android:fontFamily="@font/raleway"
+                        android:textStyle="bold"
+                        android:textColor="#4381CC"
+                        android:text="@string/about_us_txt"
+                        tools:ignore="SpUsage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_aboutus"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/aboutparagraph1"
+                        android:gravity="center_vertical"
+                        android:textSize="15dp"
+                        android:id="@+id/txt_about"
+                        android:fontFamily="@font/raleway"
+                        android:textColor="@android:color/black"
+                        tools:ignore="SpUsage" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

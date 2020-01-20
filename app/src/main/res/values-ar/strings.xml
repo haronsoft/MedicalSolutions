@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DoctorFinder</string>
+    <string name="text1">العثور على أقرب طبيب</string>
+    <string name="tetx2">وكتاب تعيين من قبل هذا التطبيق</string>
+    <string name="doctor">الأطباء</string>
+    <string name="pharmany">صيدلية</string>
+    <string name="hospital">المستشفيات</string>
+    <string name="txt_doctor">بحث الأطباء حسب تخصصهم أو عن طريق المدينة أو بالقرب منك. يمكنك العثور على أفضل الأطباء بنقرة واحدة فقط بعيدا.</string>
+    <string name="txt_pharmacies">بحث الأدوية المستوصفات هنا . يمكنك العثور على المدينة أو بالقرب منك أو فقط باستخدام الاسم.</string>
+    <string name="txt_hospitals">بحث المستشفيات حسب المدينة أو بالقرب منك أو فقط باستخدام اسم المستشفى.يمكنك العثور على أفضل المستشفيات بنقرة واحدة فقط بعيدا.</string>
+    <string name="home_header_txt">الصفحة الرئيسية</string>
+    <string name="loading" translatable="false">loading..</string>
+    <string name="distance">DISTANCE</string>
+</resources>

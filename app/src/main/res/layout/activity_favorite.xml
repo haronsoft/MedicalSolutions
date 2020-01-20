@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.medianova.doctorfinder.Favorite">
+    <RelativeLayout
+        android:id="@+id/rel_top"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorheader"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/favorites_txt"
+            android:textColor="#fff"
+            android:id="@+id/header"
+            android:textSize="25dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            tools:ignore="SpUsage" />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rel_top"
+        android:layout_above="@+id/adView"
+        android:fillViewport="true"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/topd"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                android:background="@drawable/dr_title_bg">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/doctor_fav_txt"
+                    android:textColor="#B83336"
+                    android:layout_centerVertical="true"
+                    android:textSize="20dp"
+                    android:layout_marginStart="15dp"
+                    tools:ignore="SpUsage" />
+            </RelativeLayout>
+
+            <com.medianova.doctorfinder.NestedListView
+                android:id="@+id/list_fvrt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topd" />
+
+            <RelativeLayout
+                android:id="@+id/topp"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/list_fvrt"
+                android:visibility="gone"
+                android:background="@drawable/pharmacies_title_bg">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/pharmacies_fav_txt"
+                    android:textColor="#007D21"
+                android:layout_centerVertical="true"
+                android:textSize="20dp"
+                    android:layout_marginStart="15dp"
+                    tools:ignore="SpUsage" />
+            </RelativeLayout>
+
+            <com.medianova.doctorfinder.NestedListView
+                android:id="@+id/list_fvrt1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topp" />
+            <RelativeLayout
+                android:id="@+id/toph"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                android:layout_below="@+id/list_fvrt1"
+                android:background="@drawable/hospital_title_bg">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/hospital_fav_txt"
+                    android:textColor="#0089CF"
+                    android:layout_centerVertical="true"
+                    android:textSize="20dp"
+                    android:layout_marginStart="15dp"
+                    tools:ignore="SpUsage" />
+            </RelativeLayout>
+
+            <com.medianova.doctorfinder.NestedListView
+                android:id="@+id/list_fvrt2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toph" />
+            </RelativeLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/adMobBanner"
+        >
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

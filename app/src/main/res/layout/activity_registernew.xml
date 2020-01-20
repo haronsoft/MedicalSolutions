@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.medianova.doctorfinder.Registernew">
+
+    <RelativeLayout
+        android:id="@+id/rel_main"
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/blue_bg">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/register_txt"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            tools:ignore="SpUsage" />
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/header"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true">
+
+            <com.medianova.utils.RoundedImageView
+                android:id="@+id/img_user"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/profile_reg" />
+
+            <Button
+                android:id="@+id/close"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/close_icon"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/camera"
+                android:layout_width="210dp"
+                android:layout_height="60dp"
+                android:background="@drawable/camera_btn"
+                android:gravity="bottom|end"
+                android:paddingBottom="2dp"
+                android:paddingRight="20dp"
+                android:text="@string/take_picture_txt"
+                android:textColor="#fff"
+                android:paddingEnd="20dp"
+                tools:ignore="ButtonStyle,RtlSymmetry" />
+
+            <Button
+                android:id="@+id/gallery"
+                android:layout_width="210dp"
+                android:layout_height="60dp"
+                android:background="@drawable/gallery_btn"
+                android:gravity="bottom|start"
+                android:paddingBottom="2dp"
+                android:paddingLeft="14dp"
+                android:text="@string/select_picture"
+                android:textColor="#fff"
+                android:paddingStart="14dp"
+                tools:ignore="ButtonStyle,RtlSymmetry" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rel_main"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/username_btn"
+        android:hint="@string/username_txt"
+        android:paddingLeft="50dp"
+        android:paddingStart="50dp"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/username"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/mail_id_btn"
+        android:hint="@string/mail_address_txt"
+        android:paddingLeft="50dp"
+        android:paddingStart="50dp"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/mail"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/password_btn"
+        android:hint="@string/password_txt"
+        android:inputType="textPassword"
+        android:paddingLeft="50dp"
+        android:paddingStart="50dp"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/colorheader"
+        android:text="@string/register_txt"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        tools:ignore="SpUsage" />
+
+</RelativeLayout>

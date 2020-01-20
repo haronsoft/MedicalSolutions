@@ -1,0 +1,262 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">DoctorFinder</string>
+
+
+    <!--Admob Ad Integration-->
+
+    <!--To display ads set displayads to "yes"-->
+    <string name="diaplayads" translatable="false">yes</string>
+
+    <string name="adMobId" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="adMobBanner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="adMobInterstial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
+
+    <!--SET SERVER URL HERE-->
+
+    <!--<string name="link" translatable="false">http://192.168.1.119/freak/clinicadmin/Apicontrollers/</string>-->
+    <!--<string name="link1" translatable="false">http://192.168.1.119/freak/clinicadmin/</string>-->
+    <string name="link" translatable="false"> http://doc.softmekdev.xyz/Apicontrollers/</string>
+    <string name="link1" translatable="false"> http://doc.softmekdev.xyz/</string>
+
+    <!--SET SPLASH SLIDER TEXT HERE-->
+
+    <string name="text1">Find nearest Doctor</string>
+    <string name="tetx2">&amp; Book Appointment by this app</string>
+
+    <string name="txt_doctor">Search Doctors by their speciality or by city or near by you. You can find best doctors just one click away.</string>
+    <string name="txt_pharmacies">Search Medicines dispencaries here. You can find by city or near by you or just by using name.</string>
+    <string name="txt_hospitals">Search Hospitals by city or near by you or just by using hospital name. You can find best Hospitals just one click away.</string>
+
+    <string name="loading" tools:ignore="MissingTranslation">loading..</string>
+    <string name="nearby" translatable="false">Near By (Location)</string>
+    <string name="city">City</string>
+    <string name="alphabetic">alphabetic</string>
+
+    <!-- HOME PAGE TEXT HERE-->
+
+    <string name="doctor">DOCTORS</string>
+    <string name="pharmany">PHARMACIES</string>
+    <string name="hospital">HOSPITALS</string>
+
+    <!--DOCTOR LIST TEXT HERE -->
+    <string name="doctor_symbol" translatable="false">D</string>
+    <string name="pharmacy_symbol" translatable="false">P</string>
+    <string name="hospital_symbol" translatable="false">H</string>
+    <string name="distance">DISTANCE</string>
+    <string name="rating" tools:ignore="MissingTranslation">RATINGS</string>
+    <string name="distance_miles" translatable="false">mi</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="facebook_app_id" translatable="false">336936243379790</string>
+    <string name="fb_login_protocol_scheme" tools:ignore="MissingTranslation">fb336936243379790</string>
+    <string name="setting" tools:ignore="MissingTranslation">Settings</string>
+    <string name="radius" tools:ignore="MissingTranslation">Radius</string>
+    <string name="orderby" tools:ignore="MissingTranslation">Order By</string>
+    <string name="currentlocation" tools:ignore="MissingTranslation">Current Location</string>
+    <string name="orderby_accending" tools:ignore="MissingTranslation">Order By Acending</string>
+    <string name="orderby_decending" tools:ignore="MissingTranslation">Order By decending</string>
+    <string name="Km" tools:ignore="MissingTranslation">Km</string>
+    <string name="aboutparagraph1" tools:ignore="MissingTranslation">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</string>
+    <string name="aboutparagraph2" tools:ignore="MissingTranslation">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</string>
+    <string name="aboutparagraph3" tools:ignore="MissingTranslation">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "</string>
+    <string name="aboutparagraph4" tools:ignore="MissingTranslation">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</string>
+    <string name="aboutparagraph5" tools:ignore="MissingTranslation">Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+
+    <string name="profile" tools:ignore="MissingTranslation">Profile</string>
+    <string name="book_appointment" tools:ignore="MissingTranslation">Pay To Book Appointment</string>
+
+
+    <string name="drawer_open" tools:ignore="MissingTranslation">open</string>
+    <string name="drawer_close" tools:ignore="MissingTranslation">close</string>
+
+    <string name="error_config" tools:ignore="MissingTranslation">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered" tools:ignore="MissingTranslation">Device is already registered on server.</string>
+    <string name="gcm_registered" tools:ignore="MissingTranslation">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered" tools:ignore="MissingTranslation">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message" translatable="false">From GCM: you got message!</string>
+    <string name="gcm_error" tools:ignore="MissingTranslation">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error" tools:ignore="MissingTranslation">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted" tools:ignore="MissingTranslation">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering" translatable="false">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered" translatable="false">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered" translatable="false">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error" translatable="false">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error" translatable="false">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register" tools:ignore="MissingTranslation">Register</string>
+    <string name="options_unregister" tools:ignore="MissingTranslation">Unregister</string>
+    <string name="options_clear" tools:ignore="MissingTranslation">Clear</string>
+    <string name="options_exit" tools:ignore="MissingTranslation">Exit</string>
+
+    <!--book apointment-->
+    <string name="apointment" tools:ignore="MissingTranslation">Appointment</string>
+    <string name="errormsg" tools:ignore="MissingTranslation">Sorry! No Data Found! Please Try Later!</string>
+
+    <!--Settings for error dialog text content-->
+    <string name="errormessage" tools:ignore="MissingTranslation">Sorry, We could not find any data, Please try again..</string>
+    <string name="errorconfirm" tools:ignore="MissingTranslation">Close</string>
+    <string name="button_yes" tools:ignore="MissingTranslation">Yes</string>
+    <string name="button_no" tools:ignore="MissingTranslation">No</string>
+    <string name="bookalert" tools:ignore="MissingTranslation">To book appointment login is required, Would you like to login now ?</string>
+    <string name="orderalert" tools:ignore="MissingTranslation">To order medicine you need to login first, Would you like to login now ?</string>
+    <string name="internet_message" tools:ignore="MissingTranslation">No internet connection!</string>
+    <string name="login_message" tools:ignore="MissingTranslation">Signed in successfully.</string>
+    <string name="success_title" tools:ignore="MissingTranslation">Success</string>
+    <string name="logout_message" tools:ignore="MissingTranslation">Are you sure you want to logout ?</string>
+    <string name="logout_title" tools:ignore="MissingTranslation">Logout</string>
+
+    <!--Doctor Deatail email Text -->
+
+    <string name="doctor_mail_subject" tools:ignore="MissingTranslation">Doctor Inquiries</string>
+    <string name="pharmacy_mail_subject" tools:ignore="MissingTranslation">Pharmacy Inquiries</string>
+    <string name="hospital_mail_subject" tools:ignore="MissingTranslation">Hospital Inquiries</string>
+
+    <!--Notes for Sending Recepe-->
+    <string name="recipenotes" tools:ignore="MissingTranslation">Notes:</string>
+    <string name="recipenotes1" tools:ignore="MissingTranslation">1. Appointment time may change if already allotted.</string>
+    <string name="recipenotes2" tools:ignore="MissingTranslation">2. This form is to request appointment, if your appointment confirmed you will get mail from doctor.</string>
+    <string name="recipenotes3" tools:ignore="MissingTranslation">3. For Emergency direct visit is advisable.</string>
+
+    <!--Notes for Booking appointment-->
+    <string name="booknotes" tools:ignore="MissingTranslation">Notes:</string>
+    <string name="booknotes1" tools:ignore="MissingTranslation">1. Appointment time may change if already allotted.</string>
+    <string name="booknotes2" tools:ignore="MissingTranslation">2. This form is to request appointment, if your appointment confirmed you will get mail from doctor.</string>
+    <string name="booknotes3" tools:ignore="MissingTranslation">3. For Emergency direct visit is advisable.</string>
+    <string name="orderingmedicine" tools:ignore="MissingTranslation">Hello, Here i m ordering medicine, prescription is attached below.</string>
+    <string name="reviewerror" tools:ignore="MissingTranslation">To give review,you need to login first,Would you like to login now?</string>
+    <string name="sharemessage" tools:ignore="MissingTranslation">Now find best doctors is very easy, you can search doctor, pharmacy or hospitals very easily, check out this app to search doctors, pharmacy or hospitals.</string>
+    <string name="slidetitle1" tools:ignore="MissingTranslation">Find out best doctors</string>
+    <string name="slidetitle2" tools:ignore="MissingTranslation">Now finding best doctors is very easy, you can search nearby doctor or sort by rating or service or speciality.</string>
+    <string name="slidetitle3" tools:ignore="MissingTranslation">You can also book appointment or contact doctors directly.</string>
+    <string name="pharmacytittle1" tools:ignore="MissingTranslation">Find Nearby Pharmacy</string>
+    <string name="pharmacytittle2" tools:ignore="MissingTranslation">You can search pharmacy near you, by using sorting function by city or map its very easy to find pharmacy stores</string>
+    <string name="pharmacytittle3" tools:ignore="MissingTranslation">You can upload prescription to pharmacy and get medicine at home</string>
+    <string name="hospitaltittle1" tools:ignore="MissingTranslation">Find Nearby Hospitals</string>
+    <string name="hospitaltittle2" tools:ignore="MissingTranslation">You can search hospitals near you, by using sorting function by city or map its very easy to find Hospitals</string>
+    <string name="hospitaltittle3" tools:ignore="MissingTranslation">You can check what facilities are available at hospital and contact them.</string>
+    <string name="aph1" tools:ignore="MissingTranslation">I would like to book a appointment and following is the detail for my request,</string>
+    <string name="aph2" tools:ignore="MissingTranslation">Patient Name:</string>
+    <string name="aph3" tools:ignore="MissingTranslation">Email:</string>
+    <string name="aph4" tools:ignore="MissingTranslation">Mobile Number:</string>
+    <string name="aph5" tools:ignore="MissingTranslation">Requested Date:</string>
+    <string name="aph6" tools:ignore="MissingTranslation">Requested Time:</string>
+    <string name="ap7" tools:ignore="MissingTranslation">Description:</string>
+    <string name="ap8" tools:ignore="MissingTranslation">Please,verify if the required appointment is confirmed</string>
+    <string name="ap9" tools:ignore="MissingTranslation">Thanks!</string>
+
+    <!-- SETTING PAGE STRINGS -->
+
+    <string name="distance_onoff" tools:ignore="MissingTranslation">Search by Radius</string>
+    <string name="distance_txt" tools:ignore="MissingTranslation">DISTANCE</string>
+
+    <!--Settings for default values in layouts-->
+
+    <string name="todo" tools:ignore="MissingTranslation">TODO</string>
+    <string name="about_us_txt" tools:ignore="MissingTranslation">About Us</string>
+    <string name="website_text" tools:ignore="MissingTranslation">WWW.FREAKTEMPLATE.COM</string>
+    <string name="email_txt" tools:ignore="MissingTranslation">INFO@FREAKTEMPLATE.COM</string>
+    <string name="name_company_txt" tools:ignore="MissingTranslation">FREAKTEMPLATE</string>
+    <string name="contact_us_txt" tools:ignore="MissingTranslation">Contact Us</string>
+    <string name="version_txt" tools:ignore="MissingTranslation">Version :</string>
+    <string name="abtus_header" tools:ignore="MissingTranslation"><![CDATA[Doctor Finder + Hospitals & Pharmacy]]></string>
+    <string name="version_number" tools:ignore="MissingTranslation">1.0</string>
+    <string name="user_name_txt" tools:ignore="MissingTranslation">Mark Smith</string>
+    <string name="description_hint_txt" tools:ignore="MissingTranslation">Description</string>
+    <string name="mobile_number_txt" tools:ignore="MissingTranslation">Mobile Number</string>
+    <string name="select_time_txt" tools:ignore="MissingTranslation">Select Time</string>
+    <string name="select_date_txt" tools:ignore="MissingTranslation">Select Date</string>
+    <string name="user_email_txt" tools:ignore="MissingTranslation">Mark.smith@gmail.com</string>
+    <string name="txt_abtus" tools:ignore="MissingTranslation">Lorem ipsum, dolor sit amet, consectetur, adipiscing elit, sed do eiusmod, tempor incididunt, ut labore et dolore, magna aliquaLorem ipsum, dolor sit amet, consectetur, adipiscing elit, sed do eiusmod, tempor incididunt, ut labore et dolore, magna aliquaLorem ipsum, dolor sit amet, consectetur, adipiscing elit, sed do eiusmod, tempor incididunt, ut labore et dolore, magna aliqua</string>
+    <string name="txt_healthcare" tools:ignore="MissingTranslation">Lorem ipsum, dolor sit amet, consectetur, adipiscing elit, sed do eiusmod, tempor incididunt, ut labore et dolore, magna aliquaLorem ipsum, dolor sit amet, consectetur, adipiscing elit, sed do eiusmod, tempor incididunt, ut labore et dolore, magna aliquaLorem ipsum, dolor sit amet, consectetur, adipiscing elit, sed do eiusmod, tempor incididunt, ut labore et dolore, magna aliqua</string>
+    <string name="health_care_txt_header" tools:ignore="MissingTranslation">HEALTH CARE</string>
+    <string name="share_txt" tools:ignore="MissingTranslation">SHARE</string>
+    <string name="hint_time_txt" tools:ignore="MissingTranslation">9:00 PM to 10:00 AM</string>
+    <string name="timing_txt" tools:ignore="MissingTranslation">TIMING</string>
+    <string name="services_txt" tools:ignore="MissingTranslation">Lorem ipsum, dolor sit amet, consectetur, adipiscing elit, sed do eiusmod, tempor incididunt, ut labore et dolore, magna aliquaLorem ipsum, dolor sit amet, consectetur, adipiscing elit, sed do eiusmod, tempor incididunt, ut labore et dolore, magna aliquaLorem ipsum, dolor sit amet, consectetur, adipiscing elit, sed do eiusmod, tempor incididunt, ut labore et dolore, magna aliqua</string>
+    <string name="services_txt_header" tools:ignore="MissingTranslation">SERVICES</string>
+    <string name="hint_distance" tools:ignore="MissingTranslation">4 km</string>
+    <string name="profile_name_txt" tools:ignore="MissingTranslation">Jeff hardy</string>
+    <string name="profile_description_txt" tools:ignore="MissingTranslation">Jeff hardy</string>
+    <string name="rating_txt" tools:ignore="MissingTranslation">RATING</string>
+    <string name="rating_number" tools:ignore="MissingTranslation">4.0</string>
+    <string name="image_type_txt" tools:ignore="MissingTranslation">D</string>
+    <string name="speciality_header" tools:ignore="MissingTranslation">Speciality</string>
+    <string name="favorites_txt" tools:ignore="MissingTranslation">Favorites</string>
+    <string name="doctor_fav_txt" tools:ignore="MissingTranslation">Doctor</string>
+    <string name="pharmacies_fav_txt" tools:ignore="MissingTranslation">Pharmacies</string>
+    <string name="hospital_fav_txt" tools:ignore="MissingTranslation">Hospital</string>
+    <string name="profile_txt" tools:ignore="MissingTranslation">Profile</string>
+    <string name="sign_in_txt" tools:ignore="MissingTranslation">Sign In</string>
+    <string name="home_txt">Home</string>
+    <string name="social_sharing_txt" tools:ignore="MissingTranslation">Social Sharing</string>
+    <string name="settings_txt" tools:ignore="MissingTranslation">Settings</string>
+    <string name="login_txt" tools:ignore="MissingTranslation">LOGIN</string>
+    <string name="password_txt" tools:ignore="MissingTranslation">Password</string>
+    <string name="username_txt" tools:ignore="MissingTranslation">Username</string>
+    <string name="create_new_one_txt" tools:ignore="MissingTranslation">Create new one</string>
+    <string name="dont_have_account_txt" tools:ignore="MissingTranslation">Don\'t have a account?</string>
+    <string name="sign_in_with_facebook" tools:ignore="MissingTranslation">Sign in with facebook</string>
+    <string name="register_txt" tools:ignore="MissingTranslation">Register</string>
+    <string name="take_picture_txt" tools:ignore="MissingTranslation">Take a picture</string>
+    <string name="select_picture" tools:ignore="MissingTranslation">Select picture</string>
+    <string name="mail_address_txt" tools:ignore="MissingTranslation">Mail Address</string>
+    <string name="review_txt" tools:ignore="MissingTranslation">Review</string>
+    <string name="order_medicine_header" tools:ignore="MissingTranslation">Order Medicine</string>
+    <string name="upload_prescription_txt" tools:ignore="MissingTranslation">Upload Prescription</string>
+    <string name="upload_detail_text" tools:ignore="MissingTranslation">Take a Picture of prescription using Camera or choose recipe from Gallery</string>
+    <string name="camera_txt" tools:ignore="MissingTranslation">CAMERA</string>
+    <string name="gallery_txt" tools:ignore="MissingTranslation">GALLERY</string>
+    <string name="order_medicine_txt" tools:ignore="MissingTranslation">Order Medicine</string>
+    <string name="distance_setting_txt" tools:ignore="MissingTranslation">50 Km</string>
+    <string name="setting_city_name" tools:ignore="MissingTranslation">Surat</string>
+    <string name="speciality_hint" tools:ignore="MissingTranslation">CARDIOLOGY</string>
+    <string name="user_first_letter" tools:ignore="MissingTranslation">M</string>
+    <string name="error_txt" tools:ignore="MissingTranslation">ERROR</string>
+    <string name="home_header_txt">Home</string>
+    <string name="your_experience_txt" tools:ignore="MissingTranslation">Your Experience</string>
+    <string name="submit_txt" tools:ignore="MissingTranslation">Submit</string>
+    <string name="cancel_txt" tools:ignore="MissingTranslation">Cancel</string>
+    <string name="review_here_txt" tools:ignore="MissingTranslation">Review here</string>
+    <string name="databasePath" tools:ignore="MissingTranslation">/data/data/com.medianova.doctorfinder/databases/</string>
+    <string name="selectprescription_txt" tools:ignore="MissingTranslation">Please select the image of the prescription!</string>
+    <string name="mobile_num_text" tools:ignore="MissingTranslation">Enter Mobile Number</string>
+    <string name="error_desc_text" tools:ignore="MissingTranslation">Enter Description</string>
+    <string name="sendrecipe_txt" tools:ignore="MissingTranslation">Send your recipe</string>
+    <string name="selectionsuccess_text" tools:ignore="MissingTranslation">Image selected successfully!</string>
+    <string name="email1" tools:ignore="MissingTranslation">Name:</string>
+    <string name="email2" tools:ignore="MissingTranslation">Mail id:</string>
+    <string name="email3" tools:ignore="MissingTranslation">Contact no:</string>
+    <string name="select_sucess_txt" tools:ignore="MissingTranslation">Image selected successfully!</string>
+    <string name="later_txt" tools:ignore="MissingTranslation">Please try later!</string>
+    <string name="noemailclient" tools:ignore="MissingTranslation">There is no email client exists</string>
+    <string name="inqu_txt" tools:ignore="MissingTranslation">For Inqueries</string>
+    <string name="feedback_txt" tools:ignore="MissingTranslation">Thank you for your feedback</string>
+    <string name="request_review" tools:ignore="MissingTranslation">Review Please</string>
+    <string name="thanks_txt" tools:ignore="MissingTranslation">Thanks</string>
+    <string name="selectimagetxt" tools:ignore="MissingTranslation">Please select image</string>
+    <string name="pass_enter_text" tools:ignore="MissingTranslation">Enter Password</string>
+    <string name="username_enter" tools:ignore="MissingTranslation">Enter username</string>
+    <string name="load_text" tools:ignore="MissingTranslation">Loading..</string>
+    <string name="toast_warn" tools:ignore="MissingTranslation">Username or password is incorrect</string>
+    <string name="alertmsg" tools:ignore="MissingTranslation">Location</string>
+    <string name="alert_msg2" tools:ignore="MissingTranslation">Need permission to retrive your location</string>
+    <string name="shareapp_txt" tools:ignore="MissingTranslation">Share App</string>
+    <string name="gotit_txt" tools:ignore="MissingTranslation">I got it!</string>
+    <string name="requestinternet" tools:ignore="MissingTranslation">Please connect to internet!</string>
+    <string name="skip_txt" tools:ignore="MissingTranslation">Skip</string>
+    <string name="txt_continue" tools:ignore="MissingTranslation">Continue</string>
+    <string name="pager1" tools:ignore="MissingTranslation">Near By (Location)</string>
+    <string name="pager3" tools:ignore="MissingTranslation">alphabetical order</string>
+    <string name="txt_quer" tools:ignore="MissingTranslation">Write your query to</string>
+    <string name="txt_here" tools:ignore="MissingTranslation">here</string>
+    <string name="whatsapperror" tools:ignore="MissingTranslation">Whatsapp have not been installed.</string>
+    <string name="txt_address" tools:ignore="MissingTranslation">Address:</string>
+    <string name="fbtt1" tools:ignore="MissingTranslation">is specialist in service</string>
+    <string name="fbt2" tools:ignore="MissingTranslation">, you can contact him on</string>
+    <string name="fbt3" tools:ignore="MissingTranslation">, or visit him at</string>
+    <string name="default_notification_channel_id" tools:ignore="MissingTranslation">fcm_default_channel</string>
+    <string name="enteremailid" tools:ignore="MissingTranslation">Please Enter EmailId</string>
+
+
+</resources>

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="SpUsage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rel_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rel_doctor"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/img_circle_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/img_circle_icon" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_circle_icon"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/text1"
+                android:textColor="#51596A"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:gravity="center"
+                android:text="@string/tetx2"
+                android:textColor="#51596A"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_doctor"
+            android:layout_width="fill_parent"
+            android:layout_height="97dp"
+            android:layout_above="@+id/rel_pharmacy"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btn_homedoctor">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rotationY="180"
+                android:background="@drawable/btn_homedoctor"/>
+            <TextView
+                android:id="@+id/txt_doctorname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:gravity="start"
+                android:text="@string/doctor"
+                android:textColor="#FFF"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/txt_doctordesc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_doctorname"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="70dp"
+                android:maxLines="3"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="70dp"
+                android:gravity="start"
+                android:text="@string/txt_doctor"
+                android:textColor="#FFF"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_pharmacy"
+            android:layout_width="fill_parent"
+            android:layout_height="97dp"
+            android:layout_above="@+id/rel_hospital"
+            android:layout_marginBottom="5dp"
+           >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rotationY="180"
+                android:background="@drawable/btn_homepharmacies"/>
+
+            <TextView
+                android:id="@+id/txt_pharmacyname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:gravity="start"
+                android:text="@string/pharmany"
+                android:textColor="#FFF"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/txt_pharmacydesc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_pharmacyname"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="70dp"
+                android:maxLines="3"
+
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="70dp"
+                android:gravity="start"
+                android:text="@string/txt_pharmacies"
+                android:textColor="#FFF"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_hospital"
+            android:layout_width="fill_parent"
+            android:layout_height="97dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btn_homehospital">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rotationY="180"
+                android:background="@drawable/btn_homehospital"/>
+            <TextView
+                android:id="@+id/txt_hospitalname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:gravity="start"
+                android:text="@string/hospital"
+                android:textColor="#FFF"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/txt_hospitaldesc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_hospitalname"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="10dp"
+                android:maxLines="3"
+                android:layout_marginStart="70dp"
+                android:gravity="start"
+                android:text="@string/txt_hospitals"
+                android:textColor="#FFF"
+                android:textSize="12dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="start"
+        android:background="#0089CF"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="160dp"
+            android:gravity="center_vertical">
+
+            <com.medianova.utils.RoundedImageView
+                android:id="@+id/img_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/txt_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/img_profile"
+                android:maxLines="1"
+                android:layout_toRightOf="@+id/img_profile"
+                android:gravity="center"
+                android:text="@string/profile_txt"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_profile"
+                android:maxLines="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/img_profile"
+                android:layout_toRightOf="@+id/img_profile"
+                android:text="@string/sign_in_txt"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_homen"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/home_icon"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/txt_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:maxLines="1"
+
+                android:text="@string/home_txt"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fav"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+
+            android:gravity="center_vertical"
+            tools:ignore="UseCompoundDrawables">
+            <!--<ImageView-->
+            <!--android:layout_width="17dp"-->
+            <!--android:layout_height="17dp"-->
+
+            <!--android:layout_marginLeft="15dp"/>-->
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/favorites_icon"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/txt_about"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:maxLines="1"
+
+                android:text="@string/favorites_txt"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_terms"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:maxLines="1"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/about_us_icon"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:maxLines="1"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:text="@string/about_us_txt"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_social"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+
+            android:gravity="center_vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/social_sharig_icon"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_terms1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:maxLines="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:text="@string/social_sharing_txt"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_setting"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+
+            android:gravity="center_vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/setting_icon"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/txt_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:maxLines="1"
+                android:gravity="center"
+                android:text="@string/settings_txt"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:maxLines="1"
+                android:layout_gravity="center|bottom"
+                android:background="@drawable/log_out_btn" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
+
+

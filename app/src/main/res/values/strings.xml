@@ -16,8 +16,8 @@
 
     <!--<string name="link" translatable="false">http://192.168.1.119/freak/clinicadmin/Apicontrollers/</string>-->
     <!--<string name="link1" translatable="false">http://192.168.1.119/freak/clinicadmin/</string>-->
-    <string name="link" translatable="false"> http://doc.softmekdev.xyz/Apicontrollers/</string>
-    <string name="link1" translatable="false"> http://doc.softmekdev.xyz/</string>
+    <string name="link" translatable="false"> https://doc.softmekdev.xyz/Apicontrollers/</string>
+    <string name="link1" translatable="false"> https://doc.softmekdev.xyz/</string>
 
     <!--SET SPLASH SLIDER TEXT HERE-->
 
@@ -30,8 +30,8 @@
 
     <string name="loading" tools:ignore="MissingTranslation">loading..</string>
     <string name="nearby" translatable="false">Near By (Location)</string>
-    <string name="city">City</string>
-    <string name="alphabetic">alphabetic</string>
+    <string name="city" translatable="false">City</string>
+    <string name="alphabetic" translatable="false">alphabetic</string>
 
     <!-- HOME PAGE TEXT HERE-->
 
@@ -188,7 +188,7 @@
     <string name="hospital_fav_txt" tools:ignore="MissingTranslation">Hospital</string>
     <string name="profile_txt" tools:ignore="MissingTranslation">Profile</string>
     <string name="sign_in_txt" tools:ignore="MissingTranslation">Sign In</string>
-    <string name="home_txt">Home</string>
+    <string name="home_txt" translatable="false">Home</string>
     <string name="social_sharing_txt" tools:ignore="MissingTranslation">Social Sharing</string>
     <string name="settings_txt" tools:ignore="MissingTranslation">Settings</string>
     <string name="login_txt" tools:ignore="MissingTranslation">LOGIN</string>

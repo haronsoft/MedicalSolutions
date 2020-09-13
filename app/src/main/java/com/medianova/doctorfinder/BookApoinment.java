@@ -34,6 +34,7 @@ import static com.medianova.doctorfinder.Aboutus.setTypefaces;
 
 public class BookApoinment extends Activity {
     private static final String MyPREFERENCES = "DoctorPrefrance";
+    String TAG;
     private Button btn_date;
     private Button btn_time;
     private int mYear;
@@ -52,8 +53,6 @@ public class BookApoinment extends Activity {
     private String timestamppick;
     private String doctoremail;
     private Calendar c = Calendar.getInstance();
-
-    String TAG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,7 +110,8 @@ public class BookApoinment extends Activity {
                 date = c.getTimeInMillis() / 1000L;
                 Log.e("resultdate", "" + date);
                 System.out.println("the selected " + mDay);
-                DatePickerDialog dialog = new DatePickerDialog(BookApoinment.this, new mDateSetListener(), mYear, mMonth,
+                DatePickerDialog dialog = new DatePickerDialog(BookApoinment.this,
+                        new mDateSetListener(), mYear, mMonth,
                         mDay);
                 dialog.getDatePicker().setMinDate(System.currentTimeMillis() - 1000);
                 dialog.show();
@@ -221,7 +221,6 @@ public class BookApoinment extends Activity {
                             }
                         } else {
                             Toast.makeText(BookApoinment.this, "Enter Contact Number", Toast.LENGTH_LONG).show();
-
                         }
 
                     } else {

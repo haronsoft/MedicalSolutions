@@ -183,6 +183,7 @@ public class DoctorListCity extends Fragment {
                     case "3":
                         str_url = getString(R.string.link) + "hospitalandpharmacie.php?category_id=" + doctor_id + "&lat=" + latitudecur + "&lon=" + longitudecur + "&city=" + CityId + "&current_city=" + CurrentCity;
                         break;
+                        //https://doc.softmekdev.xyz/Apicontrollers/hospitalandpharmacie.php?category_id=2&lat=-1.4771028&lon=36.9522598&city=1&current_city=kisii
                 }
                 str_url = str_url.replace(" ","%20");
                 Log.d("City_WS",str_url);

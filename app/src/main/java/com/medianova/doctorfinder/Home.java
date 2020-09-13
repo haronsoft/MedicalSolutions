@@ -22,6 +22,7 @@ import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -484,10 +485,11 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent iv = new Intent(Home.this, DoctorSpeciality.class);
+                //Worst Bug Ever
                 iv.putExtra("doctor_id", "1");
                 startActivity(iv);
-                if (shouldDisplayAds(Home.this))
-                    showAdmobInterstial(interstialAd);
+                if (shouldDisplayAds(Home.this));
+                  //  showAdmobInterstial(interstialAd);
 
             }
         });
@@ -497,8 +499,8 @@ public class Home extends AppCompatActivity {
                 Intent iv = new Intent(Home.this, DoctorList.class);
                 iv.putExtra("doctor_id", "2");
                 startActivity(iv);
-                if (shouldDisplayAds(Home.this))
-                    showAdmobInterstial(interstialAd);
+                if (shouldDisplayAds(Home.this));
+                   // showAdmobInterstial(interstialAd);
             }
         });
         rel_hospital.setOnClickListener(new View.OnClickListener() {
@@ -507,8 +509,8 @@ public class Home extends AppCompatActivity {
                 Intent iv = new Intent(Home.this, DoctorList.class);
                 iv.putExtra("doctor_id", "3");
                 startActivity(iv);
-                if (shouldDisplayAds(Home.this))
-                    showAdmobInterstial(interstialAd);
+                if (shouldDisplayAds(Home.this));
+                   // showAdmobInterstial(interstialAd);
             }
         });
     }
@@ -700,7 +702,9 @@ public class Home extends AppCompatActivity {
                 SharedPreferences.Editor editor = sharedpreferences.edit();
                 editor.putString("CityName", cityName);
                 editor.putString("CityID", cityID);
-                editor.apply();
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
+                    editor.apply();
+                }
             }
         }
     }

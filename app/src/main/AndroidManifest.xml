@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.medianova.doctorfinder">
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
@@ -23,9 +23,11 @@
         android:name="com.medianova.doctorfinder.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.medianova.doctorfinder.permission.C2D_MESSAGE" /> <!-- This app has permission to register and receive data message. -->
-    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Permission to vibrate -->
-    <uses-permission android:name="android.permission.VIBRATE" />
+<!--    <permission android:name="com.medianova.doctorfinder.permission.C2D_MESSAGE" /> &lt;!&ndash; This app has permission to register and receive data message. &ndash;&gt;
+    <permission android:name="com.google.android.c2dm.permission.RECEIVE" /> &lt;!&ndash; Permission to vibrate &ndash;&gt;
+    <permission android:name="android.permission.VIBRATE"
+         android:networkSecurityConfig="@xml/network_security_config"
+    />-->
 
     <application
         android:name="androidx.multidex.MultiDexApplication"
@@ -34,7 +36,8 @@
         android:label="@string/app_name"
         android:largeHeap="true"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
         <activity android:name="com.medianova.payment.MpesaPayment"></activity>
 
         <meta-data
@@ -99,7 +102,7 @@
 
         <activity
             android:name=".Splash"
-            android:screenOrientation="portrait">
+            android:screenOrientation="unspecified">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -109,40 +112,40 @@
         <activity
             android:name=".Home"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullUser"
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".DoctorSpeciality"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".DoctorList"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullUser"
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".Setting"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullUser"
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".DoctorDetail"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullUser"
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".Favorite"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullUser" />
         <activity
             android:name=".Review"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullUser" />
         <activity
             android:name=".Aboutus"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullUser" />
         <activity
             android:name=".Login"
-            android:screenOrientation="portrait" /> <!-- <receiver -->
+            android:screenOrientation="fullUser" /> <!-- <receiver -->
         <!-- android:name="com.medianova.utils.GcmBroadcastReceiver" -->
         <!-- android:permission="com.google.android.c2dm.permission.SEND"> -->
         <!-- <intent-filter> -->
@@ -166,16 +169,16 @@
 
         <activity
             android:name=".BookApoinment"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullUser" />
         <activity
             android:name=".Registernew"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullUser" />
         <activity
             android:name=".SendRecipe"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullUser" />
         <activity
             android:name=".Introduction"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullUser" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

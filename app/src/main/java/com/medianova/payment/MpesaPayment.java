@@ -19,11 +19,13 @@ import com.medianova.doctorfinder.R;
 
 import java.io.UnsupportedEncodingException;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
+
 public class MpesaPayment extends AppCompatActivity implements TokenListener {
     private Mpesa mpesa;
     String TAG;
     private EditText phoneET, amountET;
-    // private SweetAlertDialog sweetAlertDialog;
+     private SweetAlertDialog sweetAlertDialog;
     private String phone_number;
     private String amount;
 
@@ -86,17 +88,17 @@ public class MpesaPayment extends AppCompatActivity implements TokenListener {
             public void onResponse(STKPushResponse stkPushResponse) {
                 Log.e(TAG, "onResponse: " + stkPushResponse.toJson(stkPushResponse));
                 String message = "Please enter your pin to complete transaction";
-              //  sweetAlertDialog.changeAlertType(SweetAlertDialog.SUCCESS_TYPE);
-               // sweetAlertDialog.setTitleText("Transaction started");
-                //sweetAlertDialog.setContentText(message);
+                sweetAlertDialog.changeAlertType(SweetAlertDialog.SUCCESS_TYPE);
+                sweetAlertDialog.setTitleText("Transaction started");
+                sweetAlertDialog.setContentText(message);
             }
 
             @Override
             public void onError(Throwable throwable) {
                 Log.e(TAG, "stk onError: " + throwable.getMessage());
-               /* sweetAlertDialog.changeAlertType(SweetAlertDialog.ERROR_TYPE);
+                sweetAlertDialog.changeAlertType(SweetAlertDialog.ERROR_TYPE);
                 sweetAlertDialog.setTitleText("Error");
-                sweetAlertDialog.setContentText(throwable.getMessage());*/
+                sweetAlertDialog.setContentText(throwable.getMessage());
             }
         });
     }
@@ -104,8 +106,8 @@ public class MpesaPayment extends AppCompatActivity implements TokenListener {
     @Override
     public void OnError(Throwable throwable) {
         Log.e(TAG, "mpesa Error: " + throwable.getMessage());
-     /*   sweetAlertDialog.changeAlertType(SweetAlertDialog.ERROR_TYPE);
+        sweetAlertDialog.changeAlertType(SweetAlertDialog.ERROR_TYPE);
         sweetAlertDialog.setTitleText("Error");
-        sweetAlertDialog.setContentText(throwable.getMessage());*/
+        sweetAlertDialog.setContentText(throwable.getMessage());
     }
 }
